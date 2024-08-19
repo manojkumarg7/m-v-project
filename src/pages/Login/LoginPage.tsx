@@ -4,7 +4,7 @@ import LoginStyles from "./LoginStyles";
 const LoginPage = () => {
   return (
     <LoginStyles>
-      <h1>Login Page</h1>
+      <h1>sede Page</h1>
     </LoginStyles>
   );
 };
