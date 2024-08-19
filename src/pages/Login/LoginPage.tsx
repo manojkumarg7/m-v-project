@@ -1,4 +1,3 @@
-import React from "react";
 import LoginStyles from "./LoginStyles";
 
 const LoginPage = () => {
