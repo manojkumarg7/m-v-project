@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+=======
+>>>>>>> bfefe45b6fc8a0725876a02a5e07fdc61b7482bb
 import LoginStyles from "./LoginStyles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -9,6 +12,7 @@ import { assets } from "../../assets/assets";
 const LoginPage = () => {
   return (
     <LoginStyles>
+<<<<<<< HEAD
       <Box className="login-wrapper">
         <Typography className="head-line">Hi, Welcome Back! 👋</Typography>
         <Typography className="input-name" variant="subtitle2">
@@ -81,6 +85,9 @@ const LoginPage = () => {
           </span>{" "}
         </Typography>
       </Box>
+=======
+      <h1>sede Page</h1>
+>>>>>>> bfefe45b6fc8a0725876a02a5e07fdc61b7482bb
     </LoginStyles>
   );
 };
