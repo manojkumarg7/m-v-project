@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import LoginStyles from "./LoginStyles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-// import googleLogo from "../assets/images/googleLogo";
 import { assets } from "../../assets/assets";
 const LoginPage = () => {
   return (

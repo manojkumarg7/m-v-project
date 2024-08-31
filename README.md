@@ -2,7 +2,22 @@
 
 npm create vite@latest
 
-# React + TypeScript + Vite
+1. Clone the Repository
+2. Navigate to the Project Directory
+3. Install Dependencies
+   Install the required dependencies listed in the package.json file:
+
+npm install 4. Run the Vite Development Server
+To start the development server for a React Vite app, use:
+
+bash
+npm run dev
+
+Pull Changes from the main Branch
+To integrate changes from the main branch into your current branch, use:
+
+bash
+git pull origin main# React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
