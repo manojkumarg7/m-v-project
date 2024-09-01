@@ -2,6 +2,7 @@ import RegisterStyles from "./RegisterStyle";
 import { Typography, TextField, Button, Box } from "@mui/material";
 import { assets } from "../../assets/assets";
 import "../../styles/global.css";
+import { Link } from "react-router-dom";
 const RegisterPage: React.FC = () => {
   return (
     <RegisterStyles>
@@ -22,7 +23,7 @@ const RegisterPage: React.FC = () => {
         className="global-textfield"
         id="outlined-search"
         label="Enter Your Phone Number"
-        type="search"
+        type="number"
       />
       <TextField
         className="global-textfield"
@@ -45,7 +46,10 @@ const RegisterPage: React.FC = () => {
       </Button>
 
       <Typography className="footer-info-line">
-        Already have an account? <span className="navigate-link">Login</span>{" "}
+        Already have an account?{" "}
+        <span className="navigate-link">
+          <Link to="/"> Login</Link>
+        </span>
       </Typography>
     </RegisterStyles>
   );

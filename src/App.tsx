@@ -1,13 +1,16 @@
-import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/Header/Navbar";
 import LoginPage from "./pages/Login/LoginPage";
+import { Routes, Route } from "react-router-dom";
 import RegisterPage from "./pages/Register/RegisterPage";
-
 function App() {
   return (
     <>
-      <LoginPage />
-      {/* <RegisterPage /> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/Register" element={<RegisterPage />} />
+      </Routes>
     </>
   );
 }

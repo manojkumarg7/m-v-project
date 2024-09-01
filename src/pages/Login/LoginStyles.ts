@@ -1,7 +1,6 @@
-import { colors } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const LoginStyles = styled("div")(({ theme }) => ({
+const LoginStyles = styled("div")(({}) => ({
   maxWidth: "100%",
   height: "100vh",
   display: "grid",

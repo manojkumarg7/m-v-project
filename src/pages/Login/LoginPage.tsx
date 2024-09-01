@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import { assets } from "../../assets/assets";
 import Checkbox from "@mui/material/Checkbox";
 import "../../styles/global.css";
+import { Link } from "react-router-dom";
 const LoginPage: React.FC = () => {
   return (
     <LoginStyles>
@@ -60,7 +61,10 @@ const LoginPage: React.FC = () => {
         </Button>
 
         <Typography className="footer-info-line">
-          Don’t have an account? <span className="navigate-link">Sign Up</span>{" "}
+          Don’t have an account?{" "}
+          <span className="navigate-link">
+            <Link to="/Register">Sign Up</Link>{" "}
+          </span>
         </Typography>
       </Box>
     </LoginStyles>
