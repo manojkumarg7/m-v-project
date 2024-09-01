@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
-
 const RegisterStyles = styled("div")(({ theme }) => ({
-  color: "red",
+  maxWidth: "100%",
+  display: "grid",
+  placeItems: "center",
 }));
 export default RegisterStyles;

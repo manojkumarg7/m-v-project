@@ -5,25 +5,27 @@ import LoginStyles from "./LoginStyles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { assets } from "../../assets/assets";
-const LoginPage = () => {
+import Checkbox from "@mui/material/Checkbox";
+import "../../styles/global.css";
+const LoginPage: React.FC = () => {
   return (
     <LoginStyles>
       <Box className="login-wrapper">
-        <Typography className="head-line">Hi, Welcome Back! 👋</Typography>
-        <Typography className="input-name" variant="subtitle2">
+        <Typography className="headline">Hi, Welcome Back! 👋</Typography>
+        <Typography className="textfiled-heading" variant="subtitle2">
           Email
         </Typography>
         <TextField
-          className="text-input"
+          className="global-textfield"
           id="outlined-search"
           label="Enter Email"
           type="search"
         />
-        <Typography variant="subtitle2" className="input-name">
+        <Typography variant="subtitle2" className="textfiled-heading">
           Password
         </Typography>
         <TextField
-          className="text-input"
+          className="global-textfield"
           id="outlined-search"
           label="Enter Password"
           type="search"
@@ -36,48 +38,29 @@ const LoginPage = () => {
             marginBlock: "20px",
           }}
         >
-          <Typography>Remember Me</Typography>
-          <Typography sx={{ color: "red", cursor: "pointer" }}>
-            Forgot Password?
+          <Typography>
+            <Checkbox />
+            Remember Me
           </Typography>
+          <Typography className="forgot-password">Forgot Password?</Typography>
         </Box>
-        <Button className="btn" variant="contained">
+        <Button className="btn global-btn" variant="contained">
           Login
         </Button>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBlock: "40px",
-          }}
-        >
-          <Box className="line"></Box>
-          <Typography sx={{ fontSize: "18px" }}>or With</Typography>
-          <Box className="line"></Box>
+        <Box className="lines-wrapper">
+          <Box className="horizontal-lines"></Box>
+          <Typography className="or">or With</Typography>
+          <Box className="horizontal-lines"></Box>
         </Box>
 
-        <Button
-          className="btn"
-          variant="text"
-          sx={{
-            border: "2px solid gray",
-            borderRadius: "10px",
-            color: "#000000",
-          }}
-        >
-          <img src={assets.googleicon} alt="" className="logo" />
+        <Button className="btn  global-btn btn-style" variant="text">
+          <img src={assets.googleicon} alt="" className="google-logo" />
           Login with Google
         </Button>
 
-        <Typography sx={{ textAlign: "center", marginBlock: "10px" }}>
-          Don’t have an account ?{" "}
-          <span
-            style={{ color: "#160062", fontWeight: "bold", cursor: "pointer" }}
-          >
-            Sign Up
-          </span>{" "}
+        <Typography className="footer-info-line">
+          Don’t have an account ? <span className="navigate-link">Sign Up</span>{" "}
         </Typography>
       </Box>
     </LoginStyles>
