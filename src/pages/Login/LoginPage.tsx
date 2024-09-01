@@ -60,7 +60,7 @@ const LoginPage: React.FC = () => {
         </Button>
 
         <Typography className="footer-info-line">
-          Don’t have an account ? <span className="navigate-link">Sign Up</span>{" "}
+          Don’t have an account? <span className="navigate-link">Sign Up</span>{" "}
         </Typography>
       </Box>
     </LoginStyles>
