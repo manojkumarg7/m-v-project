@@ -1,9 +1,9 @@
 import RegisterStyles from "./RegisterStyle";
 import { Typography, TextField, Button, Box } from "@mui/material";
 import { assets } from "../../assets/assets";
-import "../../styles/global.css";
+import "../../styles/base.css";
 import { Link } from "react-router-dom";
-const RegisterPage: React.FC = () => {
+const RegisterComp: React.FC = () => {
   return (
     <RegisterStyles>
       <Typography className="headline">Create an account</Typography>
@@ -55,4 +55,4 @@ const RegisterPage: React.FC = () => {
   );
 };
 
-export default RegisterPage;
+export default RegisterComp;

@@ -1,14 +1,15 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import LoginStyles from "./LoginStyles";
+// import LoginStyles from "../pages/Login/LoginStyles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { assets } from "../../assets/assets";
 import Checkbox from "@mui/material/Checkbox";
-import "../../styles/global.css";
+import "../../styles/base.css";
 import { Link } from "react-router-dom";
-const LoginPage: React.FC = () => {
+import LoginStyles from "./LoginStyles";
+const LoginComp: React.FC = () => {
   return (
     <LoginStyles>
       <Box className="login-wrapper">
@@ -71,4 +72,4 @@ const LoginPage: React.FC = () => {
   );
 };
 
-export default LoginPage;
+export default LoginComp;
